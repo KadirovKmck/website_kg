@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:website_kg/App/Views/Navbar/Navbar.dart';
+import 'package:gap/gap.dart';
+import 'package:website_kg/App/Views/Navbar%20View/Navbar.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);
@@ -7,7 +8,12 @@ class HomeView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Column(children: [LogoNavbar()]),
+      body: SingleChildScrollView(
+          child: Column(children: [
+        LogoNavbar(),
+        Gap(1500),
+        Text('data'),
+      ])),
     );
   }
 }

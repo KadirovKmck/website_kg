@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:website_kg/App/Views/Navbar/Widget/Logo%20Widgets/LogoTextWidget.dart';
-import 'package:website_kg/App/Views/Navbar/Widget/Logo%20Widgets/searchLogoWidget.dart';
+import 'package:website_kg/App/Views/Navbar%20View/Widget/Logo%20Widgets/LogoTextWidget.dart';
+import 'package:website_kg/App/Views/Navbar%20View/Widget/Logo%20Widgets/searchLogoWidget.dart';
 import 'package:website_kg/App/widgets/Centred%20View%20Widgets/CentredVIewsWidget.dart';
 
 class LogoConteinerWidgets extends StatelessWidget {

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:website_kg/App/Views/Navbar/NavBarItems.dart';
-import 'package:website_kg/App/Views/Navbar/Widget/Logo%20Widgets/LogoConteinerWidgets.dart';
+import 'package:website_kg/App/Views/Navbar%20View/NavBarItems.dart';
+import 'package:website_kg/App/Views/Navbar%20View/Widget/Logo%20Widgets/LogoConteinerWidgets.dart';
 
 class LogoNavbar extends StatefulWidget {
   const LogoNavbar({Key? key}) : super(key: key);
