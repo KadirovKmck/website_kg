@@ -10,7 +10,9 @@ class MyWebSite extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
+    return MaterialApp(
+      theme: ThemeData(
+          textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Inter')),
       debugShowCheckedModeBanner: false,
       home: HomeView(),
     );

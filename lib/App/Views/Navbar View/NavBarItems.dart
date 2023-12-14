@@ -3,6 +3,7 @@ import 'package:gap/gap.dart';
 import 'package:website_kg/App/Views/Navbar%20View/Widget/NavBar%20Items%20Widgets/NavBarItemsKursiWidget.dart';
 import 'package:website_kg/App/Views/Navbar%20View/Widget/NavBar%20Items%20Widgets/NavBarItemsWidget.dart';
 import 'package:website_kg/App/widgets/Centred%20View%20Widgets/CentredVIewsWidget.dart';
+import 'package:website_kg/App/widgets/extension/hover_extensions.dart';
 
 class NavBarItems extends StatefulWidget {
   const NavBarItems({Key? key}) : super(key: key);
@@ -83,7 +84,7 @@ class _NavBarItemsState extends State<NavBarItems> {
                 fit: BoxFit.fill,
               ),
             ),
-          ),
+          ).showCursorOnHover.moveUpOnHOver,
         ],
       ),
     );
