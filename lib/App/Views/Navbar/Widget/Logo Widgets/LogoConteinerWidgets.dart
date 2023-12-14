@@ -11,8 +11,8 @@ class LogoConteinerWidgets extends StatelessWidget {
     return Column(
       children: [
         Container(
-          height: 750,
-          width: 700,
+          height: 800,
+          width: 715,
           decoration: const BoxDecoration(
             image: DecorationImage(
                 image: AssetImage('assets/images/shestiUgolnik.png'),
