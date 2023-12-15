@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class NavBarItemsKursiWidget extends StatelessWidget {
-  const NavBarItemsKursiWidget(
+class NavBarItemsKategoriWidget extends StatelessWidget {
+  const NavBarItemsKategoriWidget(
       {super.key, required this.title, this.onPressed});
   final String title;
   final Function()? onPressed;

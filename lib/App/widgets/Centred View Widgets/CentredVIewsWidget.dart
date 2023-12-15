@@ -7,10 +7,10 @@ class CentredVIewsWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(vertical: 60, horizontal: 70),
+      padding: const EdgeInsets.symmetric(vertical: 50, horizontal: 55),
       alignment: AlignmentDirectional.topCenter,
       child: ConstrainedBox(
-        constraints: BoxConstraints(maxWidth: 1200),
+        constraints: BoxConstraints(maxWidth: 1000),
         child: child,
       ),
     );

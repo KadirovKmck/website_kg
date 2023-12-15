@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:website_kg/App/Views/Home%20View/HomeView.dart';
+import 'package:website_kg/App/widgets/Screens%20type/ScreanTypeWidget.dart';
 
 void main(List<String> args) {
   runApp(MyWebSite());
@@ -14,7 +14,7 @@ class MyWebSite extends StatelessWidget {
       theme: ThemeData(
           textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Inter')),
       debugShowCheckedModeBanner: false,
-      home: HomeView(),
+      home: ScreanTypeWidget(),
     );
   }
 }

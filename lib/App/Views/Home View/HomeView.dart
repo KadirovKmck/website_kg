@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
-import 'package:website_kg/App/Views/Navbar%20View/Navbar.dart';
+import 'package:website_kg/App/Views/Navbar%20View/NavbarView.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({Key? key}) : super(key: key);

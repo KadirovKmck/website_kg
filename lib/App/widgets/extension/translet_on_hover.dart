@@ -20,7 +20,7 @@ class _TransletOnHoverState extends State<TransletOnHover> {
         onEnter: (e) => _mouseEnter(true),
         onExit: (e) => _mouseEnter(false),
         child: AnimatedContainer(
-          duration: Duration(milliseconds: 100),
+          duration: Duration(milliseconds: 220),
           child: widget.child,
           transform: _hovering ? hoverTransform : nonHoverTransform,
         ),

@@ -26,51 +26,54 @@ class _NavBarItemsState extends State<NavBarItems> {
               NavBarItemsWidget(
                 title: 'Категориялар',
                 icon: isCategoriRead ? Icons.chevron_right : Icons.expand_more,
-              ),
+              ).showCursorOnHover.moveUpOnHOver,
               const Gap(20),
-              const NavBarItemsKursiWidget(
+              const NavBarItemsKategoriWidget(
                 title: 'Менин курсум',
-              ),
+              ).showCursorOnHover.moveUpOnHOver,
               const Gap(20),
-              const NavBarItemsKursiWidget(
+              const NavBarItemsKategoriWidget(
                 title: 'Корзина',
-              ),
+              ).showCursorOnHover.moveUpOnHOver,
               const Gap(20),
               NavBarItemsWidget(
                 title: 'КЫР',
                 icon: isCategoriRead ? Icons.chevron_right : Icons.expand_more,
                 colorIcon: const Color(0xFF4223DA),
                 color: const Color(0xFF4223DA),
-              ),
+              ).showCursorOnHover.moveUpOnHOver,
               const Gap(20),
-              Container(
-                width: 106,
-                height: 41,
-                clipBehavior: Clip.antiAlias,
-                decoration: ShapeDecoration(
-                  color: const Color(0xFF4223DA),
-                  shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(41.09),
-                  ),
-                  shadows: const [
-                    BoxShadow(
-                      color: Color(0x59444444),
-                      blurRadius: 3.29,
-                      offset: Offset(0, 3.29),
+              InkWell(
+                onTap: () {},
+                child: Container(
+                  width: 106,
+                  height: 41,
+                  clipBehavior: Clip.antiAlias,
+                  decoration: ShapeDecoration(
+                    color: const Color(0xFF4223DA),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(41.09),
                     ),
-                  ],
-                ),
-                child: const Center(
-                  child: Text(
-                    'Кирүү',
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontSize: 16,
-                      fontFamily: 'Inter',
-                      fontWeight: FontWeight.w600,
+                    shadows: const [
+                      BoxShadow(
+                        color: Color(0x59444444),
+                        blurRadius: 3.29,
+                        offset: Offset(0, 3.29),
+                      ),
+                    ],
+                  ),
+                  child: const Center(
+                    child: Text(
+                      'Кирүү',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 16,
+                        fontFamily: 'Inter',
+                        fontWeight: FontWeight.w600,
+                      ),
                     ),
                   ),
-                ),
+                ).showCursorOnHover.moveUpOnHOver,
               ),
             ],
           ),
