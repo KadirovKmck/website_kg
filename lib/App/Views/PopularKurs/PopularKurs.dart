@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gap/gap.dart';
 import 'package:website_kg/App/Views/PopularKurs/Widget/PopularKursConteinerWidget.dart';
-import 'package:website_kg/App/widgets/extension/hover_extensions.dart';
+import 'package:website_kg/App/widgets/Conteiner%20Buttom%20Widget/ButtomConteinerWidget.dart';
 
 class PopularKurs extends StatefulWidget {
   const PopularKurs({Key? key}) : super(key: key);
@@ -13,9 +13,9 @@ class PopularKurs extends StatefulWidget {
 class _PopularKursState extends State<PopularKurs> {
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       children: [
-        const Padding(
+        Padding(
           padding: EdgeInsets.only(right: 960),
           child: Text(
             'Популярдуу курстар',
@@ -28,7 +28,7 @@ class _PopularKursState extends State<PopularKurs> {
           ),
         ),
         Gap(45),
-        const Column(
+        Column(
           children: [
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
@@ -67,38 +67,13 @@ class _PopularKursState extends State<PopularKurs> {
             ),
           ],
         ),
-        Gap(25),
-        InkWell(
-          onTap: () {},
-          child: Container(
-            width: 289,
-            height: 75,
-            clipBehavior: Clip.antiAlias,
-            decoration: ShapeDecoration(
-              color: const Color(0xFF4223DA),
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(41.09),
-              ),
-              shadows: const [
-                BoxShadow(
-                  color: Color(0x59444444),
-                  blurRadius: 3.29,
-                  offset: Offset(0, 3.29),
-                ),
-              ],
-            ),
-            child: const Center(
-              child: Text(
-                'Башка курстарды көрүү',
-                style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 16,
-                  fontFamily: 'Inter',
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
-            ),
-          ).showCursorOnHover.moveUpOnHOver,
+        Gap(45),
+        ButtomConteinerWidget(
+          title: 'Башка курстарды көрүү',
+          colors: Color(0xff4224DB),
+          height: 75,
+          width: 288,
+          shadowsColors: Colors.black,
         ),
       ],
     );
