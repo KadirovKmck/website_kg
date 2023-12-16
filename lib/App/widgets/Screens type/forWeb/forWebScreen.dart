@@ -11,8 +11,6 @@ class ForWebScreen extends StatefulWidget {
 class _ForWebScreenState extends State<ForWebScreen> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: HomeView(),
-    );
+    return HomeView();
   }
 }

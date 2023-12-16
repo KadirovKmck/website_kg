@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:website_kg/App/widgets/Screens%20type/ScreanTypeWidget.dart';
 
 void main(List<String> args) {
-  runApp(MyWebSite());
+  runApp(const MyWebSite());
 }
 
 class MyWebSite extends StatelessWidget {
@@ -14,7 +14,7 @@ class MyWebSite extends StatelessWidget {
       theme: ThemeData(
           textTheme: Theme.of(context).textTheme.apply(fontFamily: 'Inter')),
       debugShowCheckedModeBanner: false,
-      home: ScreanTypeWidget(),
+      home: const ScreanTypeWidget(),
     );
   }
 }

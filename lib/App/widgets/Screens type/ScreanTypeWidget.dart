@@ -11,9 +11,9 @@ class ScreanTypeWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return // Construct and pass in a widget builder per screen type
         ScreenTypeLayout.builder(
-      mobile: (BuildContext context) => ForMobileScreen(),
-      tablet: (BuildContext context) => ForTabletScreen(),
-      desktop: (BuildContext context) => ForWebScreen(),
+      mobile: (BuildContext context) => const ForMobileScreen(),
+      tablet: (BuildContext context) => const ForTabletScreen(),
+      desktop: (BuildContext context) => const ForWebScreen(),
     );
   }
 }

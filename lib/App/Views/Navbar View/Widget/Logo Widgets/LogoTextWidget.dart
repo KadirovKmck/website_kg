@@ -9,7 +9,7 @@ class LogoTextWidget extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(
+        const Text(
           'Жогорку сапаттагы билим ',
           style: TextStyle(
               fontSize: 84,
@@ -17,7 +17,7 @@ class LogoTextWidget extends StatelessWidget {
               fontWeight: FontWeight.bold,
               color: Colors.white),
         ),
-        Text(
+        const Text(
           'алууга мүмкүнчүлүк алыңыз!',
           style: TextStyle(
               fontSize: 26.471,
@@ -33,18 +33,18 @@ class LogoTextWidget extends StatelessWidget {
               width: 202.61,
               height: 75.17,
               decoration: ShapeDecoration(
-                color: Color(0xFFF6F5F8),
+                color: const Color(0xFFF6F5F8),
                 shape: RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(41.09),
                 ),
                 shadows: [
-                  BoxShadow(
+                  const BoxShadow(
                       color: Color(0x77FFFFFF),
                       blurRadius: 40,
                       offset: Offset(0, 3.29))
                 ],
               ),
-              child: Center(
+              child: const Center(
                 child: Text(
                   'Курсту тандоо',
                   style: TextStyle(

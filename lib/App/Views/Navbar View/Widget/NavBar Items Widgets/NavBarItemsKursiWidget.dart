@@ -14,7 +14,7 @@ class NavBarItemsKategoriWidget extends StatelessWidget {
           onPressed: () {},
           child: Text(
             title,
-            style: TextStyle(
+            style: const TextStyle(
                 fontSize: 16,
                 color: Colors.black,
                 fontFamily: 'Inter',
